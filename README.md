@@ -51,5 +51,5 @@ Go to the search, and click Virtual Machines. In the above screen you will selec
 <p>
 In the Image field, you will select your Operating System. For this lab we will be using Windows 10 and Ubuntu Linux. Select Windows 10 from the drop down menu as shown above. Choose the amount of RAM and CPUs you would like your Virtual Machine to have. You will notice the price increases as the amount of RAM and CPU cores you choose increases. It is recommended to choose 2 cores and around 16GB of RAM as we will be destroying both the Virtual Machines and the Resource Group at the end of this lab to ensure any charges will be nominal. Choosing less is acceptable, but your Virtual Machine may not endure process workload as efficiently.
 </p>
-<p>You will also need to choose a username and password. Please be sure to save these as we will need them once you are ready to login to your Virtual Machine. Be sure to check the licensing box at the bottom of this page, and click Next.</p>
+<p>You will also need to choose a username and password. Please be sure to save these as we will need them once you are ready to login to your Virtual Machine. Check the licensing box at the bottom of this page, and click Next.</p>
 <br />
