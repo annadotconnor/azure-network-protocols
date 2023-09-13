@@ -64,3 +64,19 @@ In the Image field, you will select your Operating System. For this lab we will 
 <p>
  In the top left corner you should see "Validation passed". Please click Create to complete the setup process for your first Virtual Machine. When you reach the next screen you will see "Deployment in Process". It is highly advised you wait a few minutes before creating the next Virtual Machine. If you move on too quickly the machine may not have built your virtual NIC yet, and that will make it inaccessible to the following Virtual Machine. They must use the same Virtual Network.
 </p>
+<p>
+ Once Deployment is complete, please go to the search bar and select Virtual Machines once again. You will repeat the steps above, with a few changes I will outline below.
+</p>
+
+<p>
+  <img src="https://i.imgur.com/9SaYofJ.png"> 
+ </p>
+ <p>
+ Please choose the same Resource Group you created prior from the drop down menu and name your second Virtual Machine. This will be your Ubuntu Server. Please go to the Image section, and choose Ubuntu Server from the drop down menu as shown above. Click Next on Disks, and remain on the Networking page. We will make changes.
+ </p>
+ <p>
+  <img src="https://i.imgur.com/QOgPmsr.png"> 
+ </p>
+ <p>
+  In the Virtual Network field open the drop down menu and select the vnet previously created by your first VM. You will need to be sure this step is completed so your machines are able to communicate on the same Virtual Network. 
+ </p>
