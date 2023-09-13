@@ -41,7 +41,7 @@ Navigate to Microsoft Azure, click Resource Groups from the search bar. Choose a
 <img src="https://i.imgur.com/c6AWstX.png">
 </p>
 <p>
-Go to the search bar, and click Virtual Machines. In the above screen you will select the Resource Group you created from the drop down menu. Name your Virtual Machine, and select the region local to your location.
+Go to the search bar, and click Virtual Machines. In the top right corner click Create, and choose Azure virtual machine. This will bring you to the above screen. From here you will select the Resource Group you created from the drop down menu. Name your Virtual Machine, and select the region local to your location.
 </p>
 <br />
 
