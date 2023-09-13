@@ -56,7 +56,7 @@ In the Image field, you will select your Operating System. For this lab we will 
 <p>
 <img src="https://i.imgur.com/WbelqLs.png">
 </p>
-<p>The next screen will bring you to Disks, please click next to get to the Networking screen shown above. You will see the name of your Virtual Machine has been used to create a Virtual Network. Please take note of this, as we will need to use the same Virtual Network for our Ubuntu Linux server. Scroll down and select Review + Create</p>
+<p>The next screen will bring you to Disks, please click next to get to the Networking screen shown above. You will see the name of your Virtual Machine has been used to create a Virtual Network. Please take note of this, as we will need to use the same Virtual Network for our Ubuntu Linux server. Scroll down and select Review + Create.</p>
 <br>
 <p>
  <img src="https://i.imgur.com/4uM2sWX.png"> 
