@@ -62,5 +62,5 @@ In the Image field, you will select your Operating System. For this lab we will 
  <img src="https://i.imgur.com/4uM2sWX.png"> 
 </p>
 <p>
- In the top left corner you should see "Validation passed". Please click Create to complete the setup process for your first Virtual Machine. 
+ In the top left corner you should see "Validation passed". Please click Create to complete the setup process for your first Virtual Machine. When you reach the next screen you will see "Deployment in Process". It is highly advised you wait a few minutes before creating the next Virtual Machine. If you move on too quickly the machine may not have built your virtual NIC yet, and that will make it inaccessible to the following Virtual Machine. They must use the same Virtual Network.
 </p>
