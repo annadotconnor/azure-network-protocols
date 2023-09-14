@@ -78,5 +78,5 @@ In the Image field, you will select your Operating System. For this lab we will 
   <img src="https://i.imgur.com/QOgPmsr.png"> 
  </p>
  <p>
-  In the Virtual Network field open the drop down menu and select the vnet previously created by your first VM. You will need to be sure this step is completed so your machines are able to communicate on the same Virtual Network. 
+  In the Virtual Network field open the drop down menu and select the vnet previously created by your first Virtual Machine. You will need to be sure this step is completed so your machines are able to communicate on the same Virtual Network. 
  </p>
