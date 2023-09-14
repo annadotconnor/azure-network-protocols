@@ -80,3 +80,9 @@ In the Image field, you will select your Operating System. For this lab we will 
  <p>
   In the Virtual Network field open the drop down menu and select the vnet previously created by your first Virtual Machine. You will need to be sure this step is completed so your machines are able to communicate on the same Virtual Network. 
  </p>
+<p>
+  <img src="https://i.imgur.com/ND1nujv.png"> 
+</p>
+  <p>
+   De-select SSH public key, and choose Password. Input a username and password. These can be the same as what you used for the first Virtual Machine. Click Next: Disks to get to the Networking page. 
+</p>
