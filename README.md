@@ -92,3 +92,15 @@ In the Image field, you will select your Operating System. For this lab we will 
 <p>
  On the Networking page you will see the Virtual Network field. Please be sure the Virtual Network you took note of from the creation of the Virtual Machine is chosen here. You may need to choose it from the drop down menu if it is now. If you are only given the option to create a new Virtual Network, please stop here, and begin the process to create your second Virtual Machine again. This means the deployment did not fully complete, and the Virtual NIC is not yet being recognized. If you do have this selected please click Review + Create. If your screen says Validation Passed in the upper left corner, click Create. 
 </p>
+<p>
+ <img src="https://i.imgur.com/hovHNcz.png">
+</p>
+<p>
+ We will use Remote Desktop to connect to our VMs. Please navigate to the search bar in Azure and select Virtual Machines. You should see both VMs you created listed here. Please click the first VM (Windows) you created. When the screen loads, on the right near the top you will see the Public IP address. If you hover your mouse next to this it will give you a copy option. Please do this now. 
+</p>
+<p>
+ <img src="https://i.imgur.com/ChXfSTO.png">
+</p>
+<p>
+ To open Remote Desktop please go to your Windows search bar and type Remote Desktop Connection. Click to open, and it should look similar to the image above. From here you will paste the IP address you copied for you VM. 
+</p>
