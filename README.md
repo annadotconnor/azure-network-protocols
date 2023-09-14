@@ -102,5 +102,47 @@ In the Image field, you will select your Operating System. For this lab we will 
  <img src="https://i.imgur.com/ChXfSTO.png">
 </p>
 <p>
- To open Remote Desktop please go to your Windows search bar and type Remote Desktop Connection. Click to open, and it should look similar to the image above. From here you will paste the IP address you copied for you VM. 
+ To open Remote Desktop please go to your Windows search bar and type Remote Desktop Connection. Click to open, and it should look similar to the image above. From here you will paste the IP address you copied for you VM. Click COnnect. If you Remote Desktop defaults to another Windows user account, click More Choices. Select another account. From here you will user the username and password credentials you created previously. Please enter these and connect to your VM. 
+</p>
+<p>
+ <img src="https://i.imgur.com/ELrmM4Y.png">
+</p>
+<p>
+ Once your VM loads it will go through some Windows startup questions. You can click through these. Open Microsoft Edge and proceed through the startup questions here as well. Once you are able, please navigate to <a href="https://www.wireshark.org/download.html">Wireshark</a> and select the Windows x64 Installer. Please be sure you are downloading this on your VM and not your native PC. 
+                                                                                                                                                                                                                       
+</p>
+<p>
+ <img src="https://i.imgur.com/AjL42yQ.png">
+</p>
+<p>
+ Open the Wireshark Installer, and click Next. Click Noted, and proceed to click Next through the following screens, and finally Install. We will not be configuring any installation changes, all standard installation criteria can be left as is. Proceed through any remaining screens, and click Finish to complete. 
+</p>
+<p>
+ <img src="https://i.imgur.com/kykfWq5.png">
+</p>
+<p>
+ Type Wireshark into your Windows search bar, and open your newly stalled program. Once it loads, it should look similar to the image above. Click the line that says Ethernet so yours will appear selected in blue as well, and then click the blue Wireshark logo highlighted in the upper left corner. 
+</p>
+<p> 
+ <img src="https://i.imgur.com/EIBa9aC.png">
+</p>
+<p>
+ You will see traffic appear to display within Wireshark. We want to isolate this traffic to only show certail protocols. We will be filtering ping traffic with the Internet Control Message Protocol, otherwise known as ICMP. Please go to the top of the program, and type icmp into the search bar. This will filter our traffic to only show ping requests. 
+</p>
+<p>
+ <img src="https://i.imgur.com/tm49fc3.png">
+</p>
+<p>
+ Minimize your Windows VM, and navigate back to Azure. Click on your second VM (Ubuntu), and on the right side of the screen  you will see the Networking area. Hover to the right of the Private IP address, and copy. 
+</p>
+ <img src="https://i.imgur.com/WKICfEC.png">
+</p>
+<p>
+ Please navigate back to your Windows VM, and type Powershell in the Windows search bar. Once opened, it should appear as above. 
+</p>
+<p>
+ <img src="https://i.imgur.com/X4wdCoC.png">
+</p>
+<p>
+ Type ping and enter the Private IP address of the second VM. You will see response in both PowerShell and Wireshark as VM-1 pings VM-2. 
 </p>
