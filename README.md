@@ -86,3 +86,9 @@ In the Image field, you will select your Operating System. For this lab we will 
   <p>
    De-select SSH public key, and choose Password. Input a username and password. These can be the same as what you used for the first Virtual Machine. Click Next: Disks to get to the Networking page. 
 </p>
+<p>
+   <img src="https://i.imgur.com/zWcudlx.png"> 
+</p>
+<p>
+ On the Networking page you will see the Virtual Network field. Please be sure the Virtual Network you took note of from the creation of the Virtual Machine is chosen here. You may need to choose it from the drop down menu if it is now. If you are only given the option to create a new Virtual Network, please stop here, and begin the process to create your second Virtual Machine again. This means the deployment did not fully complete, and the Virtual NIC is not yet being recognized. If you do have this selected please click Review + Create. 
+</p>
