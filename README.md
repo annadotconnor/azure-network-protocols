@@ -35,7 +35,7 @@ In this tutorial, we will observe various network traffic to and from Azure Virt
 <p>
 Navigate to Microsoft Azure, click Resource Groups from the search bar. Choose a title for your Resource Group, and enter it in the field shown above. Your Resource Group will contain your Virtual Machines. 
 </p>
-<br />
+<br><br>
 
 <p>
 <img src="https://i.imgur.com/c6AWstX.png">
@@ -43,7 +43,7 @@ Navigate to Microsoft Azure, click Resource Groups from the search bar. Choose a
 <p>
 Go to the search bar, and click Virtual Machines. In the top right corner click Create, and choose Azure virtual machine. This will bring you to the above screen. From here you will select the Resource Group you created from the drop down menu. Name your Virtual Machine, and select the region local to your location.
 </p>
-<br />
+<br><br>
 
 <p>
 <img src="https://i.imgur.com/0t9UaVH.png">
@@ -52,12 +52,12 @@ Go to the search bar, and click Virtual Machines. In the top right corner click 
 In the Image field, you will select your Operating System. For this lab we will be using Windows 10 and Ubuntu Linux. Select Windows 10 from the drop down menu as shown above. Choose the amount of RAM and CPUs you would like your Virtual Machine to have. You will notice the price increases as the amount of RAM and CPU cores you choose increases. It is recommended to choose 2 cores and around 16GB of RAM as we will be destroying both the Virtual Machines and the Resource Group at the end of this lab to ensure any charges will be nominal. Choosing less is acceptable, but your Virtual Machine may not endure process workload as efficiently.
 </p>
 <p>You will also need to choose a username and password. Please be sure to save these as we will need them once you are ready to login to your Virtual Machine. Check the licensing box at the bottom of this page, and click Next.</p>
-<br />
+<br><br>
 <p>
 <img src="https://i.imgur.com/WbelqLs.png">
 </p>
 <p>The next screen will bring you to Disks, please click next to get to the Networking screen shown above. You will see the name of your Virtual Machine has been used to create a Virtual Network. Please take note of this, as we will need to use the same Virtual Network for our Ubuntu Linux server. Scroll down and select Review + Create.</p>
-<br>
+<br><br>
 <p>
  <img src="https://i.imgur.com/4uM2sWX.png"> 
 </p>
@@ -67,43 +67,49 @@ In the Image field, you will select your Operating System. For this lab we will 
 <p>
  Once Deployment is complete, please go to the search bar and select Virtual Machines once again. You will repeat the steps above, with a few changes I will outline below.
 </p>
-
+<br><br>
 <p>
   <img src="https://i.imgur.com/9SaYofJ.png"> 
  </p>
  <p>
  Please choose the same Resource Group you created prior from the drop down menu and name your second Virtual Machine. This will be your Ubuntu Server. Please go to the Image section, and choose Ubuntu Server from the drop down menu as shown above. Click Next on Disks, and remain on the Networking page. We will make changes.
  </p>
+ <br><br>
  <p>
   <img src="https://i.imgur.com/QOgPmsr.png"> 
  </p>
  <p>
   In the Virtual Network field open the drop down menu and select the vnet previously created by your first Virtual Machine. You will need to be sure this step is completed so your machines are able to communicate on the same Virtual Network. 
  </p>
+ <br><br>
 <p>
   <img src="https://i.imgur.com/ND1nujv.png"> 
 </p>
   <p>
    De-select SSH public key, and choose Password. Input a username and password. These can be the same as what you used for the first Virtual Machine. Click Next: Disks to get to the Networking page. 
 </p>
+<br><br>
 <p>
    <img src="https://i.imgur.com/zWcudlx.png"> 
 </p>
 <p>
  On the Networking page you will see the Virtual Network field. Please be sure the Virtual Network you took note of from the creation of the Virtual Machine is chosen here. You may need to choose it from the drop down menu if it is now. If you are only given the option to create a new Virtual Network, please stop here, and begin the process to create your second Virtual Machine again. This means the deployment did not fully complete, and the Virtual NIC is not yet being recognized. If you do have this selected please click Review + Create. If your screen says Validation Passed in the upper left corner, click Create. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/hovHNcz.png">
 </p>
 <p>
  We will use Remote Desktop to connect to our VMs. Please navigate to the search bar in Azure and select Virtual Machines. You should see both VMs you created listed here. Please click the first VM (Windows) you created. When the screen loads, on the right near the top you will see the Public IP address. If you hover your mouse next to this it will give you a copy option. Please do this now. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/ChXfSTO.png">
 </p>
 <p>
  To open Remote Desktop please go to your Windows search bar and type Remote Desktop Connection. Click to open, and it should look similar to the image above. From here you will paste the IP address you copied for you VM. Click COnnect. If you Remote Desktop defaults to another Windows user account, click More Choices. Select another account. From here you will user the username and password credentials you created previously. Please enter these and connect to your VM. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/ELrmM4Y.png">
 </p>
@@ -111,38 +117,46 @@ In the Image field, you will select your Operating System. For this lab we will 
  Once your VM loads it will go through some Windows startup questions. You can click through these. Open Microsoft Edge and proceed through the startup questions here as well. Once you are able, please navigate to <a href="https://www.wireshark.org/download.html">Wireshark</a> and select the Windows x64 Installer. Please be sure you are downloading this on your VM and not your native PC. 
                                                                                                                                                                                                                        
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/AjL42yQ.png">
 </p>
 <p>
  Open the Wireshark Installer, and click Next. Click Noted, and proceed to click Next through the following screens, and finally Install. We will not be configuring any installation changes, all standard installation criteria can be left as is. Proceed through any remaining screens, and click Finish to complete. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/kykfWq5.png">
 </p>
 <p>
  Type Wireshark into your Windows search bar, and open your newly stalled program. Once it loads, it should look similar to the image above. Click the line that says Ethernet so yours will appear selected in blue as well, and then click the blue Wireshark logo highlighted in the upper left corner. 
 </p>
+<br><br>
 <p> 
  <img src="https://i.imgur.com/EIBa9aC.png">
 </p>
 <p>
  You will see traffic appear to display within Wireshark. We want to isolate this traffic to only show certail protocols. We will be filtering ping traffic with the Internet Control Message Protocol, otherwise known as ICMP. Please go to the top of the program, and type icmp into the search bar. This will filter our traffic to only show ping requests. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/tm49fc3.png">
 </p>
 <p>
  Minimize your Windows VM, and navigate back to Azure. Click on your second VM (Ubuntu), and on the right side of the screen  you will see the Networking area. Hover to the right of the Private IP address, and copy. 
 </p>
+<br><br>
+<p>
  <img src="https://i.imgur.com/WKICfEC.png">
 </p>
 <p>
  Please navigate back to your Windows VM, and type Powershell in the Windows search bar. Once opened, it should appear as above. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/X4wdCoC.png">
 </p>
 <p>
  Type ping and enter the Private IP address of the second VM. You will see response in both PowerShell and Wireshark as VM-1 pings VM-2. 
 </p>
+<br><br>
