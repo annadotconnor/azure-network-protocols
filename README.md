@@ -132,6 +132,7 @@ In the Image field, you will select your Operating System. For this lab we will 
  Type Wireshark into your Windows search bar, and open your newly stalled program. Once it loads, it should look similar to the image above. Click the line that says Ethernet so yours will appear selected in blue as well, and then click the blue Wireshark logo highlighted in the upper left corner. 
 </p>
 <br><br>
+<h2>Observing ICMP Traffic</h2>
 <p> 
  <img src="https://i.imgur.com/EIBa9aC.png">
 </p>
