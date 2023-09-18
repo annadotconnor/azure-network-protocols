@@ -198,6 +198,7 @@ In the Image field, you will select your Operating System. For this lab we will 
 <p>
  Enter DNS into the Wireshark field above as shown. To complete this lab we will be observing DNS traffic within Wireshark and PowerShell. 
 </p>
+<br><br>
 <p>
  <img src="https://i.imgur.com/yffFyJS.png">
 </p>
@@ -205,7 +206,8 @@ In the Image field, you will select your Operating System. For this lab we will 
  <img src="https://i.imgur.com/DMNIIL5.png">
 </p>
 <p>
-By using the nslookup command we can observe the DNS traffic within Wireshark and PowerShell. You can enter any websites you choose. I have completed a couple examples below. 
-</p>
+By using the nslookup command we can observe the DNS traffic within Wireshark and PowerShell. You can enter any websites you choose. I have completed a couple examples above. 
+</p><br>
+This concludes our Azure Network Protocols lab. You may destroy all resources, or retain them at your own cost. Please review your Azure subscription for more details. <br><br>
 
  
