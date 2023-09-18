@@ -25,7 +25,7 @@ In this tutorial, we will observe various network traffic to and from Azure Virt
 - Create a Resource Group
 - Create a Windows 10 VM and a Ubuntu VM
 - Download Wireshark to your Ubuntu VM Client
-- Ping traffic between VM Clients to observe your Virtual Network has successfully been created
+- Observe Traffic between various Network Protocols
 
 <h2>Actions and Observations</h2>
 
@@ -190,3 +190,22 @@ In the Image field, you will select your Operating System. For this lab we will 
 <p>
  To close the connection enter the "exit" command as shown above.
 </p>
+<br><br>
+<h2>Observing DNS Traffic</h2>
+<p>
+ <img src="https://i.imgur.com/WfGwpwA.png">
+</p>
+<p>
+ Enter DNS into the Wireshark field above as shown. To complete this lab we will be observing DNS traffic within Wireshark and PowerShell. 
+</p>
+<p>
+ <img src="https://i.imgur.com/yffFyJS.png">
+</p>
+<p>
+ <img src="https://i.imgur.com/DMNIIL5.png">
+</p>
+<p>
+By using the nslookup command we can observe the DNS traffic within Wireshark and PowerShell. You can enter any websites you choose. I have completed a couple examples below. 
+</p>
+
+ 
