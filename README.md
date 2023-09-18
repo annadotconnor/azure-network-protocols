@@ -157,6 +157,7 @@ In the Image field, you will select your Operating System. For this lab we will 
  <img src="https://i.imgur.com/X4wdCoC.png">
 </p>
 <p>
- Type ping and enter the Private IP address of the second VM. You will see response in both PowerShell and Wireshark as VM-1 pings VM-2. 
+ Type ping and enter the Private IP address of the second VM. You will see response in both PowerShell and Wireshark as traffic communicates between our Virtual Machines. At this point you can ping various websites on the internet and observe the ICMP traffic coming through wireshark, as well as PowerShell or your command line. 
 </p>
 <br><br>
+<h2>Observing SSH Traffic</h2>
