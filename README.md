@@ -161,3 +161,31 @@ In the Image field, you will select your Operating System. For this lab we will 
 </p>
 <br><br>
 <h2>Observing SSH Traffic</h2>
+<br>
+<p>
+<img src="https://i.imgur.com/yVc3Zc4.png">
+</p>
+<p>
+ Enter SSH into the Wireshark field above as shown. We will now observe SSH traffic in Wireshark as we use PowerShell to enter our second Virtual Machine. If you do not rememeber the Private IP of your second Virtual Machine, please copy this again now (Navigate back to Azure on the second VM screen to copy). 
+</p>
+<br><br>
+<p>
+<img src="https://i.imgur.com/EuYoO9Z.png">
+</p>
+<p>
+ Go to PowerShell and type the command as seen above. Hit enter. You will be prompted for a password. This is the password you created along with your credentials for the second Virtual Machine. Please enter. 
+</p>
+<br><Br>
+<p>
+ <img src="https://i.imgur.com/Hv5MBGJ.png">
+</p>
+<p>
+ If entered successfully, you will see something like this appear in PowerShell. Please observe the traffic changes in Wireshark as well, you will see various traffic coming through our SSH protocol. From this point you can enter various Linux commands into PowerShell and observe the responses in PowerShell as well as the traffic in Wireshark.
+</p>
+<br><Br>
+<p>
+<img src="https://i.imgur.com/Tp2vC80.png">
+</p>
+<p>
+ To close the connection enter the "exit" command as shown above.
+</p>
