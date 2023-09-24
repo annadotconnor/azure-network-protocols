@@ -107,7 +107,7 @@ In the Image field, you will select your Operating System. For this lab we will 
  <img src="https://i.imgur.com/ChXfSTO.png">
 </p>
 <p>
- To open Remote Desktop please go to your Windows search bar and type Remote Desktop Connection. Click to open, and it should look similar to the image above. From here you will paste the IP address you copied for you VM. Click COnnect. If you Remote Desktop defaults to another Windows user account, click More Choices. Select another account. From here you will user the username and password credentials you created previously. Please enter these and connect to your VM. 
+ To open Remote Desktop please go to your Windows search bar and type Remote Desktop Connection. Click to open, and it should look similar to the image above. From here you will paste the IP address you copied for you VM. Click Connect. If you Remote Desktop defaults to another Windows user account, click More Choices. Select another account. From here you will user the username and password credentials you created previously. Please enter these and connect to your VM. 
 </p>
 <br><br>
 <p>
